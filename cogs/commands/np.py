@@ -195,7 +195,7 @@ class NoPrefix(commands.Cog):
                         embed.set_footer(text="CodeX - No Prefix, Join support to regain access.")
                         support = Button(label='Support',
                     style=discord.ButtonStyle.link,
-                    url=f'https://discord.gg/bZwcCRM8C4')
+                    url=f'https://discord.gg/code-verse')
                         view = View()
                         view.add_item(support)
 
@@ -446,7 +446,7 @@ class NoPrefix(commands.Cog):
             
         embed = discord.Embed(
                             title="🎉 Congratulations you got 2 months No Prefix!",
-                            description=f"You've been credited 2 months of global No Prefix for boosting our Partnered Servers. You can now use my commands without prefix. If you wish to remove it, please reach out [Support Server](https://discord.gg/bZwcCRM8C4).",
+                            description=f"You've been credited 2 months of global No Prefix for boosting our Partnered Servers. You can now use my commands without prefix. If you wish to remove it, please reach out [Support Server](https://discord.gg/code-verse).",
                             color=0x000000
                         )
         try:
@@ -476,7 +476,7 @@ class NoPrefix(commands.Cog):
             await db.commit()
             
         embed= discord.Embed(title="⚠️ Global No Prefix Expired",
-                        description=f"Hey {user.mention}, your global no prefix has expired!\n\n__**Reason:**__ Unboosting our partnered Server.\nIf you think this is a mistake then please reach out [Support Server](https://discord.gg/bZwcCRM8C4).",
+                        description=f"Hey {user.mention}, your global no prefix has expired!\n\n__**Reason:**__ Unboosting our partnered Server.\nIf you think this is a mistake then please reach out [Support Server](https://discord.gg/code-verse).",
                         color=0x000000)
             
         try:

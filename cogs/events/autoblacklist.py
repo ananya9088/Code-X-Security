@@ -29,7 +29,7 @@ class AutoBlacklist(Cog):
                             title="<:alert:1348340453803687966> Guild Blacklisted",
                             description=(
                                 f"This guild has been blacklisted due to spamming or automation. "
-                                f"If you believe this is a mistake, please contact our [Support Server](https://discord.com/invite/bZwcCRM8C4) with any proof if possible."
+                                f"If you believe this is a mistake, please contact our [Support Server](https://discord.com/invite/code-verse) with any proof if possible."
                             ),
                             color=0x000000
                         )
@@ -87,7 +87,7 @@ class AutoBlacklist(Cog):
                     title="<:alert:1348340453803687966> Guild Blacklisted",
                     description=(
                         f"The guild has been blacklisted for excessive command usage. "
-                        f"If you believe this is a mistake, please contact our [Support Server](https://discord.com/invite/bZwcCRM8C4)."
+                        f"If you believe this is a mistake, please contact our [Support Server](https://discord.com/invite/code-verse)."
                     ),
                     color=0x000000
                 )
@@ -108,7 +108,7 @@ class AutoBlacklist(Cog):
                     await self.add_to_blacklist(user_id=message.author.id)
                     embed = discord.Embed(
                         title="<:alert:1348340453803687966> User Blacklisted",
-                        description=f"**{message.author.mention} has been blacklisted for repeatedly mentioning me. If you believe this is a mistake, please contact our [Support Server](https://discord.com/invite/bZwcCRM8C4) with any proof if possible.**",
+                        description=f"**{message.author.mention} has been blacklisted for repeatedly mentioning me. If you believe this is a mistake, please contact our [Support Server](https://discord.com/invite/code-verse) with any proof if possible.**",
                         color=0x000000
                     )
                     await message.channel.send(embed=embed)
@@ -140,7 +140,7 @@ class AutoBlacklist(Cog):
                 await self.add_to_blacklist(user_id=ctx.author.id)
                 embed = discord.Embed(
                     title="<:alert:1348340453803687966> User Blacklisted",
-                    description=f"**{ctx.author.mention} has been blacklisted for spamming commands. If you believe this is a mistake, please contact our [Support Server](https://discord.com/invite/bZwcCRM8C4) with any proof if possible.**",
+                    description=f"**{ctx.author.mention} has been blacklisted for spamming commands. If you believe this is a mistake, please contact our [Support Server](https://discord.com/invite/code-verse) with any proof if possible.**",
                     color=0x000000
                 )
                 await ctx.reply(embed=embed)

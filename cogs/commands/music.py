@@ -324,7 +324,7 @@ class Music(commands.Cog):
                     ended.set_footer(text="Thanks for choosing CodeX!")
                     support = Button(label='Support',
                                  style=discord.ButtonStyle.link,
-                        url=f'https://discord.gg/bZwcCRM8C4')
+                        url=f'https://discord.gg/code-verse')
                     vote = Button(label='Vote',
                                  style=discord.ButtonStyle.link,
                         url=f'https://top.gg/bot/1368423803440468060/vote')
@@ -411,7 +411,7 @@ class Music(commands.Cog):
                 ended.set_author(name="Queue Ended", icon_url=self.client.user.avatar.url)
                 support = Button(label='Support',
                              style=discord.ButtonStyle.link,
-                    url=f'https://discord.gg/bZwcCRM8C4')
+                    url=f'https://discord.gg/code-verse')
                 vote = Button(label='Vote',
                              style=discord.ButtonStyle.link,
                     url=f'https://top.gg/bot/1368423803440468060/vote')
@@ -457,7 +457,7 @@ class Music(commands.Cog):
 
         if isinstance(tracks, wavelink.Playlist):
             await vc.queue.put_wait(tracks.tracks)
-            await ctx.send(embed=discord.Embed(description=f"<:tick:1348326381611647046> Added playlist [{tracks.name}](https://discord.gg/bZwcCRM8C4) with **{len(tracks.tracks)} songs** to the queue.", color=0x000000))
+            await ctx.send(embed=discord.Embed(description=f"<:tick:1348326381611647046> Added playlist [{tracks.name}](https://discord.gg/code-verse) with **{len(tracks.tracks)} songs** to the queue.", color=0x000000))
             if not vc.playing:
                 track = await vc.queue.get_wait()
                 await vc.play(track)
@@ -465,7 +465,7 @@ class Music(commands.Cog):
         else:
             track = tracks[0]
             await vc.queue.put_wait(track)
-            await ctx.send(embed=discord.Embed(description=f"<:tick:1348326381611647046> Added [{track.title}](https://discord.gg/bZwcCRM8C4) to the queue.", color=0x000000))
+            await ctx.send(embed=discord.Embed(description=f"<:tick:1348326381611647046> Added [{track.title}](https://discord.gg/code-verse) to the queue.", color=0x000000))
             if not vc.playing:
                 await vc.play(await vc.queue.get_wait())
                 await self.display_player_embed(vc, track, ctx)
@@ -494,7 +494,7 @@ class Music(commands.Cog):
 
                 track = search_results[0]
                 await vc.queue.put_wait(track)
-                await ctx.send(embed=discord.Embed(description=f"<:tick:1348326381611647046> Added [{track.title}](https://discord.gg/bZwcCRM8C4) to the queue.", color=0x000000))
+                await ctx.send(embed=discord.Embed(description=f"<:tick:1348326381611647046> Added [{track.title}](https://discord.gg/code-verse) to the queue.", color=0x000000))
                 if not vc.playing:
                     await vc.play(track)
                     await self.display_player_embed(vc, track, ctx)
@@ -525,7 +525,7 @@ class Music(commands.Cog):
                         c += 1
                         await ctx.message.add_reaction("✅")
 
-                await ctx.send(embed=discord.Embed(description=f"<:tick:1348326381611647046> Added **{c}** of **{playlist_length}** tracks from **playlist** **[{playlist_info['name']}](https://discord.gg/bZwcCRM8C4)** to the queue.", color=0x000000))
+                await ctx.send(embed=discord.Embed(description=f"<:tick:1348326381611647046> Added **{c}** of **{playlist_length}** tracks from **playlist** **[{playlist_info['name']}](https://discord.gg/code-verse)** to the queue.", color=0x000000))
                 await lmao.delete()
                 
                 if not vc.playing:
@@ -553,7 +553,7 @@ class Music(commands.Cog):
                     if track_results:
                         await vc.queue.put_wait(track_results[0])
 
-                await ctx.send(embed=discord.Embed(description=f"<:tick:1348326381611647046> Added all tracks from album **[{album_info['name']}](https://discord.gg/bZwcCRM8C4)** to the queue.", color=0x000000))
+                await ctx.send(embed=discord.Embed(description=f"<:tick:1348326381611647046> Added all tracks from album **[{album_info['name']}](https://discord.gg/code-verse)** to the queue.", color=0x000000))
                 if not vc.playing:
                     next_track = await vc.queue.get_wait()
                     await vc.play(next_track)

@@ -435,7 +435,7 @@ class General(commands.Cog):
   async def invite(self, ctx: commands.Context):
     embed = discord.Embed(title="CodeX Invite & Support!",
       description=
-      f"> <a:black_dot:1348871328320458784> **[CodeX - Invite Bot](https://discord.com/oauth2/authorize?client_id=1362680985497636885)**\n> <a:black_dot:1348871328320458784> **[CodeX - Support](https://discord.gg/bZwcCRM8C4)**",
+      f"> <a:black_dot:1348871328320458784> **[CodeX - Invite Bot](https://discord.com/oauth2/authorize?client_id=1362680985497636885)**\n> <a:black_dot:1348871328320458784> **[CodeX - Support](https://discord.gg/code-verse)**",
       color=0x000000)
 
     embed.set_thumbnail(url="https://cdn.discordapp.com/emojis/1267667804048588992.png")
@@ -450,7 +450,7 @@ class General(commands.Cog):
     )
     support = Button(label='Support',
                     style=discord.ButtonStyle.link,
-                    url=f'https://discord.gg/bZwcCRM8C4')
+                    url=f'https://discord.gg/code-verse')
     vote = Button(label='Vote',
                       style=discord.ButtonStyle.link,
                       url='https://top.gg/bot/1368423803440468060/vote')

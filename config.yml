@@ -10,7 +10,7 @@ AI_NSFW_CONTENT_FILTER: true
 LANGUAGE: en 
 DEFAULT_INSTRUCTION: soniye
 
-Discord: https://discord.gg/bZwcCRM8C4
+Discord: https://discord.gg/code-verse
 Github: https://github.com/ApsXminer
 
 TRIGGER:
@@ -26,7 +26,7 @@ DISABLE_PRESENCE: false
 PRESENCES:
   - Faster Then IShowSpeed
   - Currently in {guild_count} guilds
-  - Support at https://discord.gg/bZwcCRM8C4
+  - Support at https://discord.gg/code-verse
 
 
 BLACKLIST_WORDS: #changed to cogs/imagine.py

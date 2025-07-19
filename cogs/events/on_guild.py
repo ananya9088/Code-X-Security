@@ -72,7 +72,7 @@ Threads : {len(guild.threads)}
             if not guild.chunked:
                 await guild.chunk()
 
-            embed = discord.Embed(description="<:arrow_right:1348340445708816494> Prefix For This Server is `$`\n<:arrow_right:1348340445708816494> Get Started with `$help`\n<:arrow_right:1348340445708816494> For detailed guides, FAQ & information, visit our **[Support Server](https://discord.gg/bZwcCRM8C4)**",
+            embed = discord.Embed(description="<:arrow_right:1348340445708816494> Prefix For This Server is `$`\n<:arrow_right:1348340445708816494> Get Started with `$help`\n<:arrow_right:1348340445708816494> For detailed guides, FAQ & information, visit our **[Support Server](https://discord.gg/code-verse)**",
     color=0xff0000)
             embed.set_author(name="Thanks for adding me!", icon_url=guild.me.display_avatar.url)
             embed.set_footer(text="Powered by CodeX Development™", icon_url="https://cdn.discordapp.com/icons/699587669059174461/f689b4366447d5a23eda8d0ec749c1ba.png")
@@ -81,7 +81,7 @@ Threads : {len(guild.threads)}
 
             support = Button(label='Support',
                              style=discord.ButtonStyle.link,
-                    url=f'https://discord.gg/bZwcCRM8C4')
+                    url=f'https://discord.gg/code-verse')
             web = Button(label='Website',
                              style=discord.ButtonStyle.link,
                     url=f'https://codexsecurity.netlify.app//')

@@ -108,9 +108,9 @@ class Stats(commands.Cog):
         embed.add_field(name="<:devs:1348326502294487182> Codebase Stats", value=f"Total Python Files: **{total_files}**\nTotal Lines: **{total_lines}**\nTotal Words: **{total_words}**", inline=False)
         embed.add_field(
     name="<:music:1348340499647430777> Music Stats",
-    value=f"Currently Connected: **[{channels_connected}](https://discord.gg/bZwcCRM8C4)**\n"
-          f"Currently Playing: **[{playing_tracks}](https://discord.gg/bZwcCRM8C4)**\n"
-          f"Total Songs Played: **[{self.total_songs_played}](https://discord.gg/bZwcCRM8C4)**",
+    value=f"Currently Connected: **[{channels_connected}](https://discord.gg/code-verse)**\n"
+          f"Currently Playing: **[{playing_tracks}](https://discord.gg/code-verse)**\n"
+          f"Total Songs Played: **[{self.total_songs_played}](https://discord.gg/code-verse)**",
     inline=False
         )
         embed.set_footer(text="Powered by CodeX Development™", icon_url=self.bot.user.display_avatar.url)
@@ -179,7 +179,7 @@ class Stats(commands.Cog):
                 team_embed.add_field(name="**<:devs:1348326502294487182> Bot Developer(s)**", value="> **[IDK](https://discord.com/users/1005088956951564358)** (Lead Developer)", inline=False)
                 team_embed.add_field(name="**<:earth:1348327194342199409> Web Developer(s)**", value="> **[IDK](https://discord.com/users/)** (Lead Web Developer)", inline=False)
                 team_embed.add_field(name="**<:tool:1348326455267823667> Tester(s)**", value="> **[IDK](https://discord.com/users/)**", inline=False)
-                team_embed.add_field(name="**<:memberss:1348326396363018290> Team(s)**", value="> **[CodeX Development™](https://discord.gg/bZwcCRM8C4)**", inline=False)
+                team_embed.add_field(name="**<:memberss:1348326396363018290> Team(s)**", value="> **[CodeX Development™](https://discord.gg/code-verse)**", inline=False)
                 team_embed.add_field(name="**<:partners:1348326428365688892> Partner(s)**", value="> **[Endercloud](https://endercloud.in/)**", inline=False)
                 team_embed.set_footer(text="Powered by CodeX Development™", icon_url=self.bot.user.display_avatar.url)
                 await interaction.response.edit_message(embed=team_embed, view=view)
